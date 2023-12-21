@@ -1,0 +1,176 @@
+body
+{
+	background-color:white;
+	/*background:url("../pics/jw.png");*/
+}
+/*header*/
+#head
+{
+	 background-color:#776854;
+	 height:90px;
+	 text-align:justify;
+	 padding-top:10px;
+	 font-family:"Comic Sans MS", cursive, sans-serif;
+	 font-size:25px;
+}
+#head h1
+{
+	margin-top:-100px;
+	text-align:center;
+}
+#head img
+{
+	margin-top:-12px;
+	margin-left:-5px;
+	width:200px;
+	height:100px;
+}
+/*NAV*/
+#nav{
+	font-size:20px;
+	height:30px;
+	width:675px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#nav a{
+    padding:10px;
+	text-decoration:none;
+	border-radius:5px;
+}
+.member
+{
+	float:right;
+}
+#nav li{
+    display:inline;
+}
+/* NAV1*/
+#nav1{
+	font-size:20px;
+	height:30px;
+	width:700px;
+	text-align:right;
+}
+
+#nav1 li{
+    display:inline;
+}
+
+#nav1 a{
+    padding:20px;
+	text-decoration:none;
+	border-radius:5px;
+	color:red;
+}
+
+
+/*side_nav*/
+#side_nav 
+{
+	float:left;
+	width:150px;
+	margin-left:70px;
+	margin-right:20px;
+}
+#side_nav a
+{
+	color:red;
+	text-decoration:none;
+	padding-top:10px;
+	display:block;
+	font-size:20px;
+	height:30px;
+}
+#body
+{
+	padding-top:10px;
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+img {
+	padding:2px;
+    opacity: 1.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+#body img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+td, img
+{
+	width:280px;
+	height:228px;
+}
+	
+/*footer*/
+#footer
+ {
+	 background-color:#776854;
+	 height:80px;
+	 padding-top:20px;
+	 font-family:"Comic Sans MS", cursive, sans-serif;
+	 clear:left;
+ }
+ #footer1
+ {
+	 text-align:center;
+	 font-size:20px;
+ }
+ #social img
+ {
+	 margin-top:-200px;
+	 width:30px;
+	 height:30px;
+	 border-radius:15px;
+ }
+ /*Contact*/
+ #googleMap
+ {
+	 margin-right:100px;
+	 float:right;
+	 width:700px;
+	 height:420px;
+ }
+input
+ {
+	 width:300px;
+ }
+ textarea
+  {
+	 width:300px;
+ }
+ #cont
+ {
+	 background-color:lightblue;
+	 width:350px;
+	 height:370px;
+	 padding-top:50px;
+	 padding-left:40px;
+	 margin-left:30px;
+	 margin-bottom:20px;
+ }
+ .cont
+ {
+	 text-align:center;
+	 font-size:20px;
+	 text-decoration:underline;
+ }
+ /*jwepg*/
+ #video
+ {
+	 width:800px;
+	 height:300px;
+	 margin-left:250px;
+	 margin-bottom:20px;
+ }
+ #page
+ {
+	 width:900px;
+	 height:400px;
+	 background-color:red;
+	 margin-left:250px;
+	 margin-bottom:100px;
+ }
+ 
