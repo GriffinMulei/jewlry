@@ -33,7 +33,7 @@ Welcome to the Jewelry Shop Project! This is a web application designed for a vi
 
 ## Installation
 
-1. git clone https://github.com/GriffinMulei/jewelry-shop.git
+1. git clone https://github.com/GriffinMulei/jwelry.git
 
 2.
 cd jewelry-shop
