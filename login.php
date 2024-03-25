@@ -1,45 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to Jewelry for You</title>
-    <link href="css/loginReg.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div id="all">
-    <h1>Login to Jewelry for You</h1>
-    <nav id="nav">
-        <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="adm.php">Admin</a></li>
-            <li><a href="register.php">Register</a></li>
-        </ul>
-    </nav>
-<div id="web">
-    <div id="logo">
-        <!-- Corrected image tag -->
-        <img src="pics/jw.jpg" alt="Mountain View">
-    </div>
-    <div id="login">
-        <!-- Revised form with semantic HTML -->
-        <form id="loginform" method="post" action="account.php">
-            <div class="form-group">
-                <label for="username" class="label">Username:</label>
-                <input type="text" required id="username" name="username" class="lgn" placeholder="Username">
-            </div>
-            <div class="form-group">
-                <label for="password" class="label">Password:</label>
-                <input type="password" required id="password" name="password" class="lgn" placeholder="Password">
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Login" class="login">
-            </div>
-        </form>
-    </div>
-</div>
-<p>
-<marquee width="80%">Welcome back to Jewelery for u.</><p>Welcome back to Jewelry for You.</p>
-</div>
-</body>
-</html>
+<?php
+session_start();
+// Assuming you have a database connection setup as $db
+require 'db_connection.php'; // Adjust this line according to your actual database connection setup
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    error_log("Login attempt for user: $username");
+
+    // Fetch user from the database
+    $stmt = $db->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt->execute([$username]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        error_log("User found in database: " . $user['username']);
+        // Verify password
+        if (password_verify($password, $user['password'])) {
+            error_log("Password verified for user: " . $user['username']);
+            // Authentication successful, set session variables
+            $_SESSION['loggedin'] = true;
+            $_SESSION['username'] = $username;
+            // Redirect to another page or show a success message
+            header("Location: dashboard.php"); // Adjust the location as needed
+            exit;
+        } else {
+            error_log("Password verification failed for user: " . $user['username']);
+            // Handle login failure
+            echo "Invalid username or password.";
+        }
+    } else {
+        error_log("User not found in database: $username");
+        // Handle user not found
+        echo "Invalid username or password.";
+    }
+}
+?>
