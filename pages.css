@@ -1,7 +1,18 @@
-.jew
-{
-	margin-bottom:-5px;
-	margin-top:-2px;
-	text-align:center;
-	font-size:25px;
+.jew {
+    margin-bottom: -5px;
+    margin-top: -2px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#main p {
+    text-align: justify;
+    margin: 20px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin-top: 20px;
 }
