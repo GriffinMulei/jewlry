@@ -16,3 +16,24 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
+.jewelry-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust based on your design preference */
+}
+
+.jewelry-item {
+    text-align: center;
+}
+
+.jewelry-item img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners to images */
+}
+
+.jew {
+    margin-top: 10px;
+    font-size: 18px; /* Adjust based on your design preference */
+}
