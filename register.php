@@ -27,37 +27,25 @@ Register to Jewelery for u</h1>
 <div id="logo">
 <img src="pics/jw.jpg"  "alt="Mountain View" >
 
+</div><div id="register">
+    <form id="loginform" method="post" action="account.php">
+        <div class="form-group">
+            <label for="username" class="label">Username:</label>
+            <input type="text" required name="username" id="username" class="lgn" placeholder="Username"/>
+        </div>
+        <div class="form-group">
+            <label for="email" class="label">Email:</label>
+            <input type="email" required name="email" id="email" class="lgn" placeholder="email"/>
+        </div>
+        <div class="form-group">
+            <label for="password" class="label">Password:</label>
+            <input type="password" required name="password" id="password" class="lgn" placeholder="Password"/>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Register" class="register">
+        </div>
+    </form>
 </div>
-<div id="register">
-<form id="loginform" method="post" action="account.php">
-<table>
-<tr>
-<td><label class="label">Username:</label></td>
-<td><label class="label">Password:</label></td>
-</tr>
-<tr>
-<td><input type="text" required name="username" class="lgn" placeholder="First Name"/></td>
-<td><input type="email" required name="email" class="lgn" placeholder="email"/></td>
-</tr>
-<tr>
-<td><label class="label">Email:</label></td>
-</tr>
-<tr>
-<td><input type="password" required name="password" class="lgn" placeholder="Password"/></td>
-</tr>
-<tr>
-<td><label class="label">Username:</label></td>
-<td><label class="label">Password:</label></td>
-</tr>
-<tr>
-<td><input type="email" required name="email" class="lgn" placeholder="email"/></td>
-<td><input type="password" required name="password" class="lgn" placeholder="Password"/></td>
-</tr>
-<tr>
-<td><input type="submit" value="Register" class="register"></td>
-</tr>
-</table>
-</form>
 </div>
 </div>
 <p>
