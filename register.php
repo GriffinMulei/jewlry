@@ -37,7 +37,7 @@ Register to Jewelery for u</h1>
 </tr>
 <tr>
 <td><input type="text" required name="username" class="lgn" placeholder="First Name"/></td>
-<td><input type="password" required name="password" class="lgn" placeholder="Last Name"/></td>
+<td><input type="email" required name="email" class="lgn" placeholder="email"/></td>
 </tr>
 <tr>
 <td><label class="label">Email:</label></td>
@@ -50,7 +50,7 @@ Register to Jewelery for u</h1>
 <td><label class="label">Password:</label></td>
 </tr>
 <tr>
-<td><input type="password" required name="password" class="lgn" placeholder="Password"/></td>
+<td><input type="email" required name="email" class="lgn" placeholder="email"/></td>
 <td><input type="password" required name="password" class="lgn" placeholder="Password"/></td>
 </tr>
 <tr>
